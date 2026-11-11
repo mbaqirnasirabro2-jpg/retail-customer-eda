@@ -36,14 +36,12 @@ Data Simulation & Missing Value Engineering (The Foundation)Real-World Simulatio
 Instead of deleting rows with missing values (which leads to loss of valuable data), we utilized Median Imputation. The median is robust against statistical outliers compared to the mean, ensuring income or age distributions remain unbiased.
 Handling Categorical Missingness (ProductCategory): For textual categories, we applied Mode Imputation, replacing missing entries with the most frequently occurring product category. This preserves the natural frequency and categorical balance of the dataset.
 
-##3. Statistical Aggregation & Groupby Analysis:
-##
+##3. Statistical Aggregation & Groupby Analysis:##
 *Granular Insights:* By leveraging Pandas groupby and aggregation functions (count, mean, sum), the pipeline evaluates commercial performance across dimensions.
 
 *Business Value:* It computes total revenue and average basket sizes per category, helping business stakeholders identify which product lines (e.g., Electronics vs. Clothing) generate high-margin transactions versus high-volume sales.
 
-##4. Correlation & Multivariate Visualization
-##
+##4. Correlation & Multivariate Visualization:##
 *Correlation Matrix (Heatmap):* Analyzes the linear relationship between customer income, spending score, and purchase amounts. This helps marketers determine whether wealthy customers automatically spend more or if spending behavior is driven by psychological scores.
 
 *Distribution Histograms & Bar Plots:* Visualizes demographic spreads (such as customer age brackets) using Seaborn and Matplotlib to ensure data distributions are stable and ready for potential future machine learning classification tasks.
