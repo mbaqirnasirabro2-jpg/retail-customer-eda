@@ -19,3 +19,10 @@ In retail analytics, understanding customer spending patterns is vital for marke
 ---
 
 ## Methodology & Pipeline Workflow
+
+Key Data Insights & Findings
+Data Quality Handling: Successfully identified and imputed missing values across Age, AnnualIncome, and ProductCategory using robust statistical methods (Median and Mode) to prevent data distortion.
+
+Spending Behavior: Analysis reveals that higher spending scores align closely with specific demographic segments, independent of a linear age correlation.
+
+Category Performance: High-ticket product categories like Electronics exhibit higher average purchase values per transaction compared to standard apparel goods.
