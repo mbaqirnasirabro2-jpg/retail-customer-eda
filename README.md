@@ -26,3 +26,12 @@ Data Quality Handling: Successfully identified and imputed missing values across
 Spending Behavior: Analysis reveals that higher spending scores align closely with specific demographic segments, independent of a linear age correlation.
 
 Category Performance: High-ticket product categories like Electronics exhibit higher average purchase values per transaction compared to standard apparel goods.
+
+## Detailed Technical Breakdown of the EDA Pipeline1.
+##
+Data Simulation & Missing Value Engineering (The Foundation)Real-World Simulation: In actual data science environments, data is rarely clean. Datasets often arrive with missing values (NaN), formatting errors, or noise.The Mechanism: Our script programmatically generates $500$ customer profiles with variables like Age, Annual Income, Spending Score, and Purchase Amount. To mimic real-world challenges, we intentionally injected missing values using NumPy (np.nan) across demographic and categorical features.
+
+##2. Data Cleaning & Imputation StrategyHandling Numerical Missingness (Age, AnnualIncome):
+
+Instead of deleting rows with missing values (which leads to loss of valuable data), we utilized Median Imputation. The median is robust against statistical outliers compared to the mean, ensuring income or age distributions remain unbiased.
+Handling Categorical Missingness (ProductCategory): For textual categories, we applied Mode Imputation, replacing missing entries with the most frequently occurring product category. This preserves the natural frequency and categorical balance of the dataset.
